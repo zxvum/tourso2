@@ -46,14 +46,26 @@
                 </select>
             </div>
             <div class="flex flex-col mt-5">
-                <div class="w-full shadow-lg bg-[#222d35] rounded-xl border-t-2 border-[#161d22] transition duration-200 hover:-translate-y-2 hover:border-[#4558ed]">
+                <div class="max-w-[350px] shadow-lg bg-[#222d35] rounded-xl border-t-2 border-[#161d22] transition duration-200 hover:-translate-y-2 hover:border-[#4558ed]">
                     <div class="h-[150px] bg-[#272727] rounded-t-xl flex items-center justify-center p-10 relative">
                         <img src="{{ asset('assets/img/standoff-logo.png') }}" alt="logo">
-                        <p class="absolute top-2 right-4 text-white">RU <img src="{{ url(asset()) }}" alt=""></p>
+                        <p class="absolute top-2 right-4 text-[#99a8b4] flex items-center gap-2"><span>RU</span> <img src="{{ url(asset('assets/img/ru.png')) }}" alt="logo" class="w-6"></p>
                     </div>
                     <div class="p-4">
-                        <div class="flex justify-between">
-                            <p class="text-[#a3afb8]">Платформа - Discord</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-[#a3afb8] text-sm uppercase">Платформа - Discord</p>
+                            <span class="bg-[#4d5860] px-[10px] py-[1px] rounded-full text-[12px] text-[#c0c8ce]">2x2</span>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-[#ced7de] text-lg">Турнир на 20.000 голды</p>
+                        </div>
+                        <div class="flex justify-between mt-4 gap-5">
+                            <div class="flex items-center ">
+                                <p class="text-[#a3afb8] text-[12px]">21 Мая 2022</p>
+                                <div class="h-full w-[2px] bg-[#2a3741]"></div>
+                                <p class="text-[#a3afb8] text-[12px]">18:40 CAST</p>
+                            </div>
+                            <button class="bg-[#426bff] text-white px-[20px] py-[10px] rounded">Участвовать</button>
                         </div>
                     </div>
                 </div>

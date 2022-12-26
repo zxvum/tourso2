@@ -25,6 +25,7 @@ module.exports = {
     content: [
         './app/**/*.php',
         './resources/**/*.html',
+        './resources/**/*.blade.html',
         './resources/**/*.js',
         './resources/**/*.jsx',
         './resources/**/*.ts',
