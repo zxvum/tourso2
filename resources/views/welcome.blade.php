@@ -39,15 +39,23 @@
         <div class="container">
             <div class="flex items-center justify-between">
                 <p class="text-white text-2xl">12 Турниров</p>
-                <select name="" id="" class="text-sm rounded-md bg-transparent text-white">
+                <select name="" id="" class="text-xs rounded-md bg-transparent text-white">
                     <option selected disabled>Выберите платформу</option>
                     <option>Discord</option>
                     <option>Web</option>
                 </select>
             </div>
             <div class="flex flex-col mt-5">
-                <div class="w-full shadow-lg bg-[#222d35] p-2 rounded-xl">
-
+                <div class="w-full shadow-lg bg-[#222d35] rounded-xl border-t-2 border-[#161d22] transition duration-200 hover:-translate-y-2 hover:border-[#4558ed]">
+                    <div class="h-[150px] bg-[#272727] rounded-t-xl flex items-center justify-center p-10 relative">
+                        <img src="{{ asset('assets/img/standoff-logo.png') }}" alt="logo">
+                        <p class="absolute top-2 right-4 text-white">RU <img src="{{ url(asset()) }}" alt=""></p>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between">
+                            <p class="text-[#a3afb8]">Платформа - Discord</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
